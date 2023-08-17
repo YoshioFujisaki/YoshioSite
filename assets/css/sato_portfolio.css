@@ -3,6 +3,16 @@ img {
   margin: auto;
 }
 
+.main_content
+{
+  width: 1380px;
+}
+
+nav.header_nav
+{
+  padding: 40px;
+}
+
 a.name
 {
   font-size: larger;
@@ -10,7 +20,7 @@ a.name
 
 a.img
 {
-  width: 370px;
+  width: 330px;
   height: 350px;
   position: relative;
 }
@@ -25,18 +35,18 @@ a.img::before {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #eeeded;
-  transition: opacity 0.5s, width 0.5s, height 0.5s;
+  transition: opacity 0.3s, width 0.3s, height 0.3s;
 }
 
 a.img:not(:hover)::before {
   opacity: 0;
   width: 0;
   height: 0;
-  transition: opacity 0.8s 0.8s, width 0.8s 0.8s, height 0.8s 0.8s;
+  transition: opacity 0.3s 0.3s, width 0.3s 0.3s, height 0.3s 0.3s;
 }
 
 a.img:hover::before {
-  width: 370px;
+  width: 330px;
   height: 350px;
   opacity: 0.6;
 }

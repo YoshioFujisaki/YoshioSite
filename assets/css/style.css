@@ -25,6 +25,11 @@ p {
   font-size: 15px;
 }
 
+header
+{
+  margin-top: 30px;
+}
+
 .hero {
   background-image:url("/wp-content/themes/mysite/assets/img/header.jpg");
   background-position: center;

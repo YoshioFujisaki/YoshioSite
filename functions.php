@@ -27,3 +27,5 @@ function my_enqueue_scripts()
 
 add_action('wp_enqueue_scripts', 'my_enqueue_styles');
 add_action('wp_enqueue_scripts', 'my_enqueue_scripts');
+
+add_filter('show_admin_bar', '__return_false');

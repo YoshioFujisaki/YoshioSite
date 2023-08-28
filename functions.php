@@ -26,6 +26,7 @@ function my_enqueue_scripts()
   if ( is_page_template( 'sato_portfolio.php' ) ) {
       wp_enqueue_script( 'nav_change', get_template_directory_uri() . '/assets/js/nav_change.js', array(), '0.1', true );
   }
+
 } 
 
 add_action('wp_enqueue_scripts', 'my_enqueue_styles');

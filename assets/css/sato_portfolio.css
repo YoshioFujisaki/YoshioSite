@@ -1,0 +1,97 @@
+img {
+  object-fit: cover;
+  margin: auto;
+}
+
+main
+{
+  width: 93%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav.header_nav
+{
+  padding: 40px;
+}
+
+a.name
+{
+  font-size: larger;
+}
+
+a.img
+{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+a.img::before {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eeeded;
+  transition: opacity 0.3s, width 0.3s, height 0.3s;
+}
+
+a.img:not(:hover)::before {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transition: opacity 0.3s 0.3s, width 0.3s 0.3s, height 0.3s 0.3s;
+}
+
+a.img:hover::before {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+#works_cont .text-center
+{
+  padding: 10px;
+}
+
+div.type1 p.text-center {
+  margin-top: 40px;
+}
+
+div.box
+{
+  margin: 20px;
+  z-index: 1;
+  padding-top: 20px;
+}
+
+div.type2
+{
+  width: 90%;
+  margin: auto;
+}
+
+img.type1 {
+  width: 90%;
+  padding-top: 50px;
+}
+
+img.type2 {
+  width: 60%;
+}
+
+#works_cont,
+#profile_cont
+{
+  display: none;
+}
+
+#works_cont.active,
+#profile_cont.active
+{
+  display: block;
+}

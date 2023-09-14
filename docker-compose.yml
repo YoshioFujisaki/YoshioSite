@@ -1,0 +1,48 @@
+version: '3.5'
+
+services:
+
+  php-apache:
+    container_name: sample-shop_php_apache_1
+    image: senseshare/php-apache
+    ports:
+      - 8880:80
+    volumes:
+      - .:/var/www/html
+    restart: always
+
+  mysql:
+    container_name: sample-shop_mysql_1
+    image: senseshare/mysql
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
+    restart: always
+
+  phpmyadmin:
+    container_name: sample-shop_phpmyadmin_1
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 4040:80
+    environment:
+      PMA_HOST: 'mysql'
+      PMA_USER: 'root'
+      PMA_PASSWORD: 'password'
+
+  wordpress:
+    image: wordpress:latest
+    #container_name: "wordpress"
+    volumes:
+      - ./wordpress/html:/var/www/html
+      - ./php/php.ini:/usr/local/etc/php/conf.d/php.ini
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wordpress_db
+      WORDPRESS_DB_USER: user
+      WORDPRESS_DB_PASSWORD: user_pass_Ck6uTvrQ

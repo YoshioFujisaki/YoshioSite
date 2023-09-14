@@ -1,9 +1,7 @@
 (function (){
-  console.log("nav_change.js");
-  // ファイルパスを取得
+  console.log('connected');
   let works_btn = document.getElementById('works_btn');
   let profile_btn = document.getElementById('profile_btn');
-  console.log(profile_btn);
   let works_content = document.getElementById('works_cont');
   let profile_content = document.getElementById('profile_cont');
   

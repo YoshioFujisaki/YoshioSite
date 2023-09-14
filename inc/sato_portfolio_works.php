@@ -1,5 +1,5 @@
 <main id="works_cont">
-    <div class="container main_content mx-auto flex justify-around">
+    <div class="container main_content mx-auto">
       <div class="img w-1/4">
         <div class="box type1">
           <img class="type1" src="<?php echo get_template_directory_uri() ?>/assets/img/type1.jpg" alt="">

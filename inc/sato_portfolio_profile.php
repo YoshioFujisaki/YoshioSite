@@ -1,5 +1,7 @@
 <main id="profile_cont">
   <div class="container">
-    <h3>profile</h3>
+    <div class="profile_header">
+      <h1>Sato Kashiwaguma</h1>
+    </div>
   </div>
 </main>

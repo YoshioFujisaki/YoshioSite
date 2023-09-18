@@ -30,24 +30,10 @@
                 <nav class="ham_menu header__nav" id="js-nav">
                     <ul class="nav__itmes nav-itmes">
                         <li class="Menu-Group-Item">
-                            <a class="Menu-Group-Item-Link" href="<?php get_template_directory_uri() ?>/">
-                                <span>TOP</span>
-                            </a>
+                            <button class="Menu-Group-Item-Link" id="works_btn_sp"> WORKS </button>
                         </li>
                         <li class="Menu-Group-Item">
-                            <a class="Menu-Group-Item-Link" href="/about/">
-                                <span>PROFILE</span>
-                            </a>
-                        </li>
-                        <li class="Menu-Group-Item">
-                            <a class="Menu-Group-Item-Link" href="/works/">
-                                <span>WORKS</span>
-                            </a>
-                        </li>
-                        <li class="Menu-Group-Item">
-                            <a class="Menu-Group-Item-Link" href="/company/">
-                                <span>COMPANY</span>
-                            </a>
+                            <button class="Menu-Group-Item-Link" id="profile_btn_sp"> PROFILE </button>
                         </li>
                     </ul>
                 </nav>

@@ -66,6 +66,7 @@ div.type1 p.text-center {
 div.box
 {
   margin: 20px;
+  margin-bottom: 15px;
   z-index: 1;
   padding-top: 20px;
 }
@@ -138,18 +139,22 @@ img.type2 {
   }
 
   .header__nav {
+    opacity: 0;
     position: absolute;
     top: 0;
     left: -587px;
-    padding-top: 130px;
+    padding-top: 200px;
     width: 100%;
     height: 100%;
-    transform: translateX(150%); 
-    background-color: #fff; /*ハンバーガーメニュークリック時のナビゲーションメニュー背景色*/
+    background: #fff;
     transition: ease .4s; /*ハンバーガーメニュークリック時のナビゲーションメニュー出現を遅延*/
     text-align: center;
     z-index: 1;
-    background: #fff;
+  }
+
+  .header__nav.active {
+    opacity: 1;
+    transform: translateX(150%); 
   }
 
   /* ハンバーガーメニュー */
@@ -232,8 +237,24 @@ img.type2 {
     margin-bottom: 20px;
   }
 
-  a.Menu-Group-Item-Link span {
+  button.Menu-Group-Item-Link span {
     font-size: 130%;
+  }
+
+  #works_cont .before_text{
+    opacity: 1;
+  }
+
+  div.img::before {
+    background: none;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .Menu-Group-Item-Link {
+    margin: 0 auto;
   }
 }
 

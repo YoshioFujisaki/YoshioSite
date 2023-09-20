@@ -20,7 +20,7 @@
         </nav>
 
         <div class="header__inner">
-            <nav class="sp_menu flex justify-between py-10 px-12">
+            <nav class="sp_menu flex justify-between py-10 px-8">
 
                 <button class="hamburger header__hamburger" id="js-hamburger">
                     <span></span>

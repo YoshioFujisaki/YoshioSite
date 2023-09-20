@@ -3,25 +3,21 @@ img {
   margin: auto;
 }
 
-main
-{
+main {
   width: 93%;
   margin-left: auto;
   margin-right: auto;
 }
 
-nav.header_nav
-{
+nav.header_nav {
   padding: 40px;
 }
 
-a.name
-{
+a.name {
   font-size: larger;
 }
 
-div.img
-{
+div.img {
   width: 100%;
   height: 350px;
   position: relative;
@@ -54,8 +50,7 @@ div.img:hover::before {
   opacity: 0.6;
 }
 
-#works_cont .text-center
-{
+#works_cont .text-center {
   padding: 10px;
 }
 
@@ -63,16 +58,14 @@ div.type1 p.text-center {
   margin-top: 40px;
 }
 
-div.box
-{
+div.box {
   margin: 20px;
   margin-bottom: 15px;
   z-index: 1;
   padding-top: 20px;
 }
 
-div.type2
-{
+div.type2 {
   width: 90%;
   margin: auto;
 }
@@ -87,19 +80,16 @@ img.type2 {
 }
 
 #works_cont,
-#profile_cont
-{
+#profile_cont {
   display: none;
 }
 
 #works_cont.active,
-#profile_cont.active
-{
+#profile_cont.active {
   display: block;
 }
 
-#works_cont .before_text
-{
+#works_cont .before_text {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -111,12 +101,22 @@ img.type2 {
   width: 100%;
 }
 
-.profile_header {
-  margin-left: 200px;
+.container_profile {
+  width: 1024px;
+  margin: 0 auto;
 }
 
 .profile_header h1 {
   font-size: 150%;
+}
+
+.host_info {
+  margin-top: 40px;
+}
+
+.host_info p {
+  width: 100%;
+  overflow-wrap: break-word;
 }
 
 
@@ -126,7 +126,7 @@ img.type2 {
     display: none;
   }
 
-  
+
 }
 
 @media (max-width:768px) {
@@ -135,7 +135,8 @@ img.type2 {
   }
 
   .header__inner {
-    height: inherit; /*親要素の高さを継承*/
+    height: inherit;
+    /*親要素の高さを継承*/
   }
 
   .header__nav {
@@ -147,66 +148,69 @@ img.type2 {
     width: 100%;
     height: 100%;
     background: #fff;
-    transition: ease .4s; /*ハンバーガーメニュークリック時のナビゲーションメニュー出現を遅延*/
+    transition: ease .4s;
+    /*ハンバーガーメニュークリック時のナビゲーションメニュー出現を遅延*/
     text-align: center;
     z-index: 1;
   }
 
   .header__nav.active {
     opacity: 1;
-    transform: translateX(150%); 
+    transform: translateX(150%);
   }
 
   /* ハンバーガーメニュー */
   .header__hamburger {
-  width: 30px;
-  height: 100%;
-  margin-top: 8px;
+    width: 30px;
+    height: 100%;
+    margin-top: 8px;
   }
 
   .hamburger {
-  background-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
-  border-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
-  z-index: 9999;
+    background-color: transparent;
+    /*buttonタグデフォルトスタイルを打ち消し*/
+    border-color: transparent;
+    /*buttonタグデフォルトスタイルを打ち消し*/
+    z-index: 9999;
   }
 
   .hamburger span {
-  width: 80%;
-  height: 1px;
-  background-color: #000;
-  position: relative;
-  transition: ease .4s; /*ハンバーガーメニュークリック時の三本線の動きを遅延*/
-  display: block;
+    width: 80%;
+    height: 1px;
+    background-color: #000;
+    position: relative;
+    transition: ease .4s;
+    /*ハンバーガーメニュークリック時の三本線の動きを遅延*/
+    display: block;
   }
 
   .hamburger span:nth-child(1) {
-  top: 0;
+    top: 0;
   }
 
-    .hamburger span:nth-child(2) {
-  margin: 10px 0;
+  .hamburger span:nth-child(2) {
+    margin: 10px 0;
   }
 
-  * ハンバーガーメニュークリック後のスタイル */
-  .header__nav.active {
-  transform: translateX(0);
+  * ハンバーガーメニュークリック後のスタイル */ .header__nav.active {
+    transform: translateX(0);
   }
 
   .hamburger.active span:nth-child(1) {
-  top: 5px;
-  transform: rotate(45deg);
+    top: 5px;
+    transform: rotate(45deg);
   }
 
   .hamburger.active span:nth-child(2) {
-  top: -6px;
-  transform: rotate(-45deg);
+    top: -6px;
+    transform: rotate(-45deg);
   }
 
   .nav-items {
     padding-top: 250px;
     padding-bottom: 200px;
   }
-  
+
   /* ナビのリンク */
   .nav-items__item a {
     color: black;
@@ -216,7 +220,7 @@ img.type2 {
     font-size: 20px;
     margin-bottom: 24px;
   }
-  
+
   .nav-items__item:last-child a {
     margin-bottom: 0;
   }
@@ -241,7 +245,7 @@ img.type2 {
     font-size: 130%;
   }
 
-  #works_cont .before_text{
+  #works_cont .before_text {
     opacity: 1;
   }
 
@@ -256,6 +260,11 @@ img.type2 {
   .Menu-Group-Item-Link {
     margin: 0 auto;
   }
+
+  .container_profile {
+    width: auto;
+    padding: 30px;
+  }
 }
 
 .main_content {
@@ -264,3 +273,16 @@ img.type2 {
   width: 90%;
 }
 
+ul.category li button.active,
+ul.category li button:hover,
+ul.category li a:hover {
+  opacity: .7;
+}
+
+a:hover {
+  color: none;
+}
+
+.lb-data .lb-number {
+  display: none !important;
+}
